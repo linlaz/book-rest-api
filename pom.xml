@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.lintech</groupId>
-	<artifactId>maximum</artifactId>
+	<artifactId>Peminjaman-Buku-Rest-Api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>maximum</name>
 	<description>rest api </description>

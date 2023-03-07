@@ -1,5 +1,6 @@
 package com.lintech.maximum.controller;
 
+import com.lintech.maximum.model.Author;
 import com.lintech.maximum.model.Book;
 import com.lintech.maximum.service.inter.BookInter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ public class BookController {
     }
     @PostMapping()
     public ResponseEntity<Map> save(@RequestBody Book book){
+        System.out.println(book);
         return new ResponseEntity<>(bookInter.save(book),HttpStatus.OK);
     }
     @GetMapping("/{id}")
@@ -30,6 +32,16 @@ public class BookController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Map> deleteById(@PathVariable("id")Long id){
         return new ResponseEntity<>(bookInter.deleteById(id),HttpStatus.OK);
+    }
+
+    @DeleteMapping()
+    public ResponseEntity<Map> deleteById(){
+        return new ResponseEntity<>(bookInter.deleteAll(),HttpStatus.OK);
+    }
+
+    @PutMapping("/{id}/author")
+    public ResponseEntity<Map> updateBookAuthorById(@PathVariable("id") Long id, @RequestBody Book book){
+        return new ResponseEntity<>(bookInter.updateBookAuthorById(id,book),HttpStatus.OK);
     }
 
 }

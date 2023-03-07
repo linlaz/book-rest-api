@@ -1,14 +1,10 @@
 package com.lintech.maximum.repository;
 
-import com.lintech.maximum.model.Book;
 import com.lintech.maximum.model.Publisher;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
-import java.util.Map;
 
 @Repository
 public interface PublisherRepository extends JpaRepository<Publisher,Long> {

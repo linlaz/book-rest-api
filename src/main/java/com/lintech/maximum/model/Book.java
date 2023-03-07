@@ -1,5 +1,6 @@
 package com.lintech.maximum.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -29,6 +30,7 @@ public class Book implements Serializable {
     private String thumbnail;
 
     @ManyToMany()
+    @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
     @JoinTable(
             name = "author_book",
             joinColumns = @JoinColumn(name = "author_id"),

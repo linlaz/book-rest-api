@@ -11,4 +11,6 @@ public interface AuthorRepository extends JpaRepository<Author,Long> {
     @Query(value = "UPDATE Author SET name_author = :name, desc_author = :desc WHERE id = :id", nativeQuery = true)
     Integer updateAllEntityByIdAndParameter(Long id,String name, String desc);
 
+    Author getAuthorById(Long id);
+
 }

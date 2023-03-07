@@ -1,7 +1,6 @@
 package com.lintech.maximum.service.impl;
 
 import com.lintech.maximum.model.Author;
-import com.lintech.maximum.model.Publisher;
 import com.lintech.maximum.repository.AuthorRepository;
 import com.lintech.maximum.service.inter.AuthorInter;
 import jakarta.transaction.Transactional;

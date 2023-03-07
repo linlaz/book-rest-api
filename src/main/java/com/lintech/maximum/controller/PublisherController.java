@@ -1,15 +1,12 @@
 package com.lintech.maximum.controller;
 
 import com.lintech.maximum.model.Publisher;
-import com.lintech.maximum.repository.PublisherRepository;
-import com.lintech.maximum.service.impl.PublisherService;
 import com.lintech.maximum.service.inter.PublihserInter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.Map;
 
 @RestController

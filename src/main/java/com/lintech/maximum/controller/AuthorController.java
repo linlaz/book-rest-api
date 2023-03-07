@@ -1,7 +1,6 @@
 package com.lintech.maximum.controller;
 
 import com.lintech.maximum.model.Author;
-import com.lintech.maximum.model.Book;
 import com.lintech.maximum.service.inter.AuthorInter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

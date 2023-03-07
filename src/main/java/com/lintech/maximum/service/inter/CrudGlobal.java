@@ -1,7 +1,5 @@
 package com.lintech.maximum.service.inter;
 
-import com.lintech.maximum.model.Publisher;
-
 import java.util.Map;
 
 public interface CrudGlobal<T> {
