@@ -17,12 +17,10 @@ public class Author extends BaseModel implements Serializable {
 
     @Column(name = "name_author",length = 200)
     private String name;
-
     @Column(name = "desc_author", length = 200)
     private String desc;
 
     @JsonIgnore
     @ManyToMany( mappedBy = "authors")
     private List<Book> books;
-
 }

@@ -9,7 +9,7 @@ import java.util.List;
 @Entity
 @Data
 @Table(name = "publisher")
-public class Publisher implements Serializable {
+public class Publisher extends BaseModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

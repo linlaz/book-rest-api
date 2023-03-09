@@ -10,7 +10,7 @@ import java.util.List;
 @Entity
 @Data
 @Table(name = "/book")
-public class Book implements Serializable {
+public class Book extends BaseModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
